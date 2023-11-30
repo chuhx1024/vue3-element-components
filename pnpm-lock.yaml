@@ -4,13 +4,31 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  typescript:
-    specifier: ^5.3.2
-    version: 5.3.2
-  vue:
-    specifier: ^3.2.36
-    version: 3.2.36
+importers:
+
+  .:
+    dependencies:
+      '@chu-plus/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@chu-plus/them-chalk':
+        specifier: workspace:^
+        version: link:packages/them-chalk
+      '@chu-plus/utils':
+        specifier: workspace:^
+        version: link:packages/utils
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
+      vue:
+        specifier: ^3.2.36
+        version: 3.2.36
+
+  packages/components: {}
+
+  packages/them-chalk: {}
+
+  packages/utils: {}
 
 packages:
 

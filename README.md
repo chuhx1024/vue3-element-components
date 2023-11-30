@@ -42,3 +42,34 @@ npx tsc --init # 初始化ts配置文件
   ]
 }
 ```
+
+## 在项目根目录下建立`pnpm-workspace.yaml`配置文件
+
+```yaml
+packages:
+  - packages/** # 存放编写组件的
+  - docs # 存放文档的
+  - play # 测试组件的
+```
+## 创建包
+
+```bash
+cd components && pnpm init #   修改 "name": "@chu-plus/components", 
+cd utils && pnpm init # 修改 "name": "@chu-plus/utils",
+cd theme-chalk && pnpm init # 修改 "name": "@chu-plus/theme-chalk",
+```
+
+## 实现项目内 包的引用
+
+> 在根模块下添加依赖
+
+```
+pnpm install @z-plus/components -w
+pnpm install @z-plus/theme-chalk -w
+pnpm install @z-plus/utils -w
+```
+> 这样就可以以第三方模块的方式  引用我们的模块了
+
+
+
+

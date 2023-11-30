@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@chu-plus/components": "workspace:^",
+    "@chu-plus/them-chalk": "workspace:^",
+    "@chu-plus/utils": "workspace:^",
     "typescript": "^5.3.2",
     "vue": "^3.2.36"
   }
