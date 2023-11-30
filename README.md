@@ -70,6 +70,18 @@ pnpm install @z-plus/utils -w
 ```
 > 这样就可以以第三方模块的方式  引用我们的模块了
 
+## 创建 play 测试环境
+
+```sh
+# 在根目录
+pnpm create vite
+
+# 项目名 为 play 选择 vue  ts 模式
+```
+
+
+
+
 
 
 
