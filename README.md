@@ -77,6 +77,8 @@ pnpm install @z-plus/utils -w
 pnpm create vite
 
 # 项目名 为 play 选择 vue  ts 模式
+
+# 在根目录 package.json 添加 "dev": "pnpm -C play dev"  把 play 命令提升的 根目录
 ```
 
 
