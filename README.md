@@ -81,9 +81,16 @@ pnpm create vite
 # 在根目录 package.json 添加 "dev": "pnpm -C play dev"  把 play 命令提升的 根目录
 ```
 
+## 通过 js 实现 bem 规范 
+```js
+// packages/utils/bem.ts
+```
 
+## 实现第一个组件 icon
 
-
-
-
-
+- 使用 pnpm i unplugin-vue-define-options -D -w 为了组件可以使用  name 属性
+```js
+defineOptions({
+    name: 'chu-icon'
+})
+```
